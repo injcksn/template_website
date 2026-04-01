@@ -1,7 +1,5 @@
 link for copilot
-https://injcksn.github.io/template_website/pages/index.html
+https://github.com/injcksn/template_website
 
 dev link for me
 https://github.dev/injcksn/template_website
-
-yo
