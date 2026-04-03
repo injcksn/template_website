@@ -31,5 +31,6 @@ body {
 
 .top_menu {
     display: flex;
+    height: 50px;
     background-color: red;
 }
