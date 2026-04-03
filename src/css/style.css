@@ -34,6 +34,7 @@ body {
     background-color: red;
 }
 .top_menu_button {
-    padding: 20px;
+    padding: 10px;
     border-radius: 0px;
+    border-top: 5px;
 }
