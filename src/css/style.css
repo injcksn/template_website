@@ -33,3 +33,7 @@ body {
     display: flex;
     background-color: red;
 }
+.top_menu_button {
+    padding: 20px;
+    border-radius: 0px;
+}
