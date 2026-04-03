@@ -1,3 +1,10 @@
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
 @font-face {
     font-family: 'Satoshi';
     src: url('../../public/fonts/Satoshi-Regular.woff2') format('woff2');
