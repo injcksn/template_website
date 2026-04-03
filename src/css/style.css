@@ -30,5 +30,6 @@ body {
 }
 
 .top_menu {
+    display: flex;
     background-color: red;
 }
