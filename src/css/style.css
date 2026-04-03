@@ -47,6 +47,14 @@ body {
     border-width: 3px 3px 3px 0px;
     border-color: black;
     background-color: blue;
+    
+    /* Prevents text selection */
+    -webkit-user-select: none; /* Safari */
+    user-select: none;         /* Standard syntax */
+    
+    /* Removes the gray highlight box on tap (mobile Safari/Chrome) */
+    -webkit-tap-highlight-color: transparent;
+
 }
 .top_menu_button:active {
 
