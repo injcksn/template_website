@@ -58,7 +58,7 @@ body {
 }
 .top_menu_button:active {
 
-    background-color: orange;
+    background-color: green;
     box-shadow: inset 2px 2px 8px rgba(0,0,0,0.4);
-    transition: box-shadow 0.15s, background-color 0.15s ease 0.1s;
+    transition: box-shadow 0.15s, background-color 0.15s ease 0s;
 }
