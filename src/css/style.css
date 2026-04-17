@@ -41,12 +41,19 @@ body {
     background-color: red;
 }
 .top_menu_button {
-    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
     border-radius: 0px;
     border-style: solid;
     border-width: 3px 3px 3px 0px;
     border-color: black;
     background-color: blue;
+
+    /* The Pro Transition (Move it here!) */
+    /* This makes the color fade smooth when you click AND when the page loads */
+    transition: background-color 0.2s ease, box-shadow 0.15s ease;
     
     /* Prevents text selection */
     -webkit-user-select: none; /* Safari */
@@ -56,9 +63,31 @@ body {
     -webkit-tap-highlight-color: transparent;
 
 }
-.top_menu_button:active {
+/* Fix the left border of the very first link */
+.top_menu_button:first-child {
+    border-left-width: 3px;
+}
 
-    background-color: green;
+/* The "Clicking" state (Temporary) */
+.top_menu_button:active {
+    background-color: pink;
     box-shadow: inset 2px 2px 8px rgba(0,0,0,0.4);
-    transition: box-shadow 0.15s, background-color 0.15s ease 0s;
+}
+
+/* THE STICKY STATE (Permanent while on the page) */
+.top_menu_button.active {
+    background-color: white;
+    color: blue;
+    font-weight: 700; /* Uses your Satoshi-Bold */
+}
+
+#header-import {
+    min-height: 50px; /* Adjust this to the height of your menu */
+    display: block;
+    background-color: blue; /* Match your menu color so it doesn't flicker white */
+}
+
+.top_menu_button {
+    /* ... existing styles ... */
+    transition: background-color 0.4s ease; 
 }
